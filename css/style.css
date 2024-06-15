@@ -248,11 +248,6 @@ iframe {
     min-height: 100vh;
 }
   
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 
 .content-wrap {
     flex: 1 0 auto;  /* Grow to fill available space */
