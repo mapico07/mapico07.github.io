@@ -258,4 +258,13 @@ iframe {
     padding: 10px;
 }
 
-  
+
+.text-container {
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 95%; 
+    box-sizing: border-box; 
+}
