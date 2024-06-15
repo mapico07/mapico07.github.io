@@ -257,9 +257,14 @@ iframe {
     text-align: center;
     padding: 10px;
 }
-
+.interview-container {
+    position: relative;
+}
 
 .text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
     justify-content: center; 
     align-items: center;
     margin-bottom: 20px;
@@ -267,4 +272,8 @@ iframe {
     margin-right: 40px;
     width: 95%; 
     box-sizing: border-box; 
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
 }
+
