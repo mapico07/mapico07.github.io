@@ -155,14 +155,19 @@ iframe {
     border: 5px solid black;
 }
 
+
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        border: 2px solid black;
+
+    }
+
 
 .contact-form input[type="text"],
+
 .contact-form textarea {
     width: 100%;
     padding: 10px;
