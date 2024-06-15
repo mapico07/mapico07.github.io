@@ -247,11 +247,6 @@ iframe {
     position: relative;
     min-height: 100vh;
 }
-  
-
-.content-wrap {
-    flex: 1 0 auto;  /* Grow to fill available space */
-}
 
 .footer {
     flex-shrink: 0;  /* Prevent footer from shrinking */
