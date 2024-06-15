@@ -9,7 +9,7 @@ if($_POST) {
     $message = $_POST['message'];
 
 
-    $to = 'mapicoto@eastsideprep.org';
+    $to = 'maria.picoto@hotmail.com';
     $subject = 'New message from your website';
     $headers = "From: $email" . "\r\n" .
                "Reply-To: $email" . "\r\n" .
