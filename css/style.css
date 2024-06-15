@@ -70,10 +70,6 @@ body, html {
     height: 100%;
 }
 
-.wrapper {
-    min-height: 100%;
-    margin-bottom: -50px;
-}
 
 .text, .photo {
     margin: 0;
@@ -239,20 +235,7 @@ iframe {
     color: #333;
 }
 
-.footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin-top: auto;
-    clear: both;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
+
 
 .social-media img {
     width: 50px;  
@@ -260,8 +243,25 @@ iframe {
     margin: 0 10px;  
 }
 
-.footer,
-.push {
-    height: 50px;
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+  
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+}
+  
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
+
+  
