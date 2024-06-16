@@ -278,3 +278,22 @@ iframe {
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
 }
 
+.content {
+    position: relative;
+    width: 100%;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-left: 10px;
+}
