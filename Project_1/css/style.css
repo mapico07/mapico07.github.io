@@ -72,16 +72,21 @@ main {
 
 .carousel-item {
     position: relative;
-    /* Other styles... */
 }
 
 .carousel-caption {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: white; /* White text */
-    text-align: center;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+    color: white; /* Optional: Change the text color */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
+
+.carousel-item:hover .carousel-caption {
+    opacity: 1;
+}
+
+
