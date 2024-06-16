@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title> Picoto| Project 1</title> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    
+<body>
+
+<nav>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="riding.html">Horseback riding </a></li>
+        <a href="activities.html">Actvities</a></li>
+    </div>
+</nav>
+<h1 style="text-align: center;">Want to learn about horses?</h1>
+<h3 style="width: 80%; margin: 0 auto; text-align: center;">Horses are magnificent creatures that have been a part of human history for centuries. Whether you're a horse enthusiast or just curious to learn more, this page is the perfect place to start.</h3>
+<div class="carousel">
+    <img src="Images/Morgan.jpg" alt="Image 1">
+    <img src="Images/chesnut.jpg" alt="Image 2">
+    <img src="Images/Foal.jpg" alt="Image 3">
+</div>
+
+<script>
+    // Initialize carousel index
+    var carouselIndex = 0;
+    // Start the carousel
+    carousel();
+
+    function carousel() {
+        var i;
+        // Get all the images inside the carousel
+        var images = document.querySelectorAll(".carousel img"); 
+        // Hide all the images
+        for (i = 0; i < images.length; i++) {
+            images[i].style.display = "none";
+        }
+        // Increment the carousel index
+        carouselIndex++;
+        // If the carousel index is greater than the number of images, reset it to 1
+        if (carouselIndex > images.length) {
+            carouselIndex = 1;
+        }
+        // Show the current image
+        images[carouselIndex - 1].style.display = "block";
+        // Change image every 2 seconds
+        setTimeout(carousel, 2000); 
+    }
+</script>
+<div class="container">
+    <h2>Why learn about horses?</h2>
+    <p>Learning about horses can be a rewarding experience for several reasons:</p>
+    <ul>
+        <li>Understanding horse behavior and communication</li>
+        <li>Appreciating their role in various cultures and traditions</li>
+        <li>Exploring different horse breeds and their characteristics</li>
+        <li>Gaining knowledge about horse care and welfare</li>
+        <li>Discovering equestrian sports and activities</li>
+    </ul>
+    <h2>Where to start?</h2>
+    <p>If you're new to the world of horses, here are a few suggestions to get you started:</p>
+    <ol>
+        <li>Read books or articles about horses</li>
+        <li>Visit local horse farms or equestrian centers</li>
+        <li>Take riding lessons or attend horse-related workshops</li>
+        <li>Join online communities or forums dedicated to horses</li>
+        <li>Watch documentaries or movies about horses</li>
+    </ol>
+    </div>
+</body>
+</html>

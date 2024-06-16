@@ -1,3 +1,15 @@
+<!--
+This is the contact page of the website. It contains a form for users to submit their contact information and a section displaying the personal information of the website owner.
+
+The page structure is as follows:
+- The page starts with a header that includes a background image and a text overlay.
+- The navigation bar is displayed below the header, allowing users to navigate to other pages of the website.
+- The main content of the page is divided into two sections: the contact form and the personal information section.
+- The contact form allows users to enter their name, email, subject, and message, and submit the form.
+- The personal information section displays the name, email, phone number, and address of the website owner.
+- The footer section includes social media icons and copyright information.
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,21 +29,35 @@
     </header>
 
     <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Home</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="contact.html" class="active">Contact</a>  <!-- this is like the current works page */ -->
         <a href="about.html">About</a>
         <a href="gallery.html">Gallery</a>
-        <a href="News.html">News</a>  <!-- this is like the current works page */ -->
+        <a href="News.html">News</a> 
         <a href="Pricing.html">Pricing</a>
         <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
-    <h2 style="text-align: center;">Contact</h2>
+    <h2 style="text-align: center;">How to Contact Ed Sheeran</h2>
     <div id="info-container">
         <div id="contact">
             <div id="contact" class="container">
                 
+            <!--
+                This HTML code represents a contact form that allows users to send messages to the website owner.
+                
+                Usage:
+                - The form is submitted to the URL specified in the 'action' attribute, which is "https://formspree.io/f/xbjnnpyp".
+                - The form uses the 'POST' method to send the data.
+                
+                Form Fields:
+                - 'name': A textarea where the user can enter their name.
+                - 'email': An input field where the user can enter their email address.
+                - 'Subject': A textarea where the user can enter the subject of their message.
+                - 'message': A textarea where the user can enter their message.
+                
+            -->
             <form
                     action="https://formspree.io/f/xbjnnpyp"
                     method="POST"
@@ -49,6 +75,11 @@
             </form>
             </div>
         </div>
+        <!--
+            This section contains personal information of Ed's Agent.
+            It includes the person's name, email, phone number, and PO box address.
+            The information is displayed in a structured format using HTML tags.
+        -->
         <div id="personal-info">
             <h2>Personal Information</h2>
             <h3>Name:</h3>
@@ -57,7 +88,7 @@
             <p>Info@iamgrumpy.com</p>
             <h3>Phone: </h3>
             <p>+44 7488811042</p>
-            <h3>PO box adress: </h3>
+            <h3>PO box address: </h3>
             <p>Grumpy Old Management Ltd.</p>
             <p>PO Box 114 </p>
             <p>295 Chiswick High Road</p>

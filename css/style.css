@@ -268,7 +268,7 @@ iframe {
     left: 0;
     justify-content: center; 
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     margin-left: 40px;
     margin-right: 40px;
     width: 95%; 
@@ -288,7 +288,7 @@ iframe {
     height: auto;
 }
 
-.text-container {
+.text2-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -296,4 +296,11 @@ iframe {
     transform: translate(-50%, -50%);
     text-align: center;
     margin-left: 10px;
+}
+
+.welcome {
+    flex: 1;
+    text-align: left;
+    margin-right: 100px;
+    margin-left: 100px;
 }
