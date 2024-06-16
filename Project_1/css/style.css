@@ -65,7 +65,7 @@ main {
 }
 
 .carousel .carousel-item img {
-    width: 1000px;  /* Set the width */
+    width: 800px;  /* Set the width */
     height: 600px; /* Set the height */
     object-fit: cover; /* This will ensure that your images cover the whole area without distortion */
 }
