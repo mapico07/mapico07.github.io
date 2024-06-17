@@ -9,23 +9,46 @@
     
 <body>
 
+<!-- 
+    This code represents the navigation bar for the "riding.html" page.
+    It contains a list of links to different pages, including the current page.
+    The navigation bar is styled using the "topnav" class and is responsive.
+    The "active" class is applied to the link corresponding to the current page.
+-->
 <nav>
     <div class="topnav" id="myTopnav">
         <a href="index.html">Home</a>
-        <a href="riding.html" class="active">Horseback riding </a>
-        <a href="activities.html">Actvities</a>
+        <a href="riding.html" class="active">Horseback riding</a>
+        <a href="activities.html">Activities</a>
     </div>
 </nav>
+
+<!--
+    This HTML code represents a webpage that showcases different types of horseback riding disciplines.
+    It includes a carousel that displays images and captions for each type of riding.
+    The carousel automatically cycles through the images every 2 seconds.
+-->
+
 <main>
+    <!-- The main content of the webpage -->
     <h1 style="text-align: center;">Types of Horseback Riding</h1>
+    <!-- Heading for the main topic of the webpage -->
     <h3 style="text-align: center;">Horseback riding is a popular activity enjoyed by people all over the world. There are various types of horseback riding disciplines, each with its own unique characteristics and requirements. Here are some of the most common types:</h3>
+    <!-- Description of horseback riding and its various disciplines -->
     <div class="carousel">
+        <!-- Container for the carousel -->
         <div class="carousel-item">
+            <!-- Individual carousel item -->
             <img src="Images/Dressage.jpg" alt="Dressage" class="d-block" style="width:100%">
+            <!-- Image for the carousel item -->
             <div class="carousel-caption">
+                <!-- Caption for the carousel item -->
                 <h2>1. Dressage</h2>
+                <!-- Heading for the specific type of riding -->
                 <p>Dressage is a highly skilled form of horseback riding that focuses on the precise execution of movements and exercises. </p>
+                <!-- Description of the specific type of riding -->
                 <p>It emphasizes the horse's natural ability to perform various gaits and maneuvers.</p>
+                <!-- Additional information about the specific type of riding -->
             </div> 
         </div>
         <div class="carousel-item">
@@ -70,9 +93,6 @@
         </div>
     </div>
 
-
-    
-    
     <script>
         // Initialize carousel index
         var carouselIndex = 0;
@@ -80,12 +100,15 @@
         carousel();
     
         function carousel() {
+            // Function to control the carousel
             var i;
-            // Get all the images inside the carousel
-            var images = document.querySelectorAll(".carousel img"); 
-            // Hide all the images
+            // Get all the images inside the carousel and captions
+            var images = document.querySelectorAll("img"); 
+            var items = document.querySelectorAll(".carousel-caption");
+            // Hide all the images and captions
             for (i = 0; i < images.length; i++) {
                 images[i].style.display = "none";
+                items[i].style.display = "none";
             }
             // Increment the carousel index
             carouselIndex++;
@@ -93,13 +116,14 @@
             if (carouselIndex > images.length) {
                 carouselIndex = 1;
             }
-            // Show the current image
-            images[carouselIndex - 1].style.display = "block";
-            // Change image every 2 seconds
+            // Show the current image and caption
+            images[carouselIndex - 1].style.display ="block";
+            items[carouselIndex - 1].style.display = "block";
+            // Change image and caption every 2 seconds
             setTimeout(carousel, 2000); 
         }
     </script>
-    </main>
+</main>
 
 </body>
 </html>
