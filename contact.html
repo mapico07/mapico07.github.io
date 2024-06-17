@@ -12,6 +12,11 @@ The page structure is as follows:
 -->
 <!DOCTYPE html>
 <html lang="en">
+<!--
+    This HTML code represents the head section of a web page.
+    It includes meta tags for character encoding and viewport settings,
+    as well as a title for the page and a link to an external CSS file.
+-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale-1.0">
@@ -20,14 +25,26 @@ The page structure is as follows:
 </head>
     
 <body>
+    <!-- 
+        This code represents the header section of a contact page.
+        It includes an image container with a background image and a text overlay.
+        The image source is set to "Images/Collage.jpg" and the alt attribute is set to "Background Image".
+        The text overlay is positioned at the bottom left corner of the image container and displays the name "Edward Christopher Sheeran".
+    -->
     <header>
         <div class="image-container">
             <img src="Images/Collage.jpg" alt="Background Image" style="width:100%">
             <div class="bottom-left" >Edward Christopher Sheeran</div>
-        </div>
-        
+        </div>       
     </header>
 
+    <!-- 
+        This code represents a navigation bar with links to different pages.
+        The "topnav" class is applied to the containing div element.
+        Each link is represented by an anchor element (<a>) with an href attribute pointing to the respective page.
+        The "active" class is applied to the "Contact" link to indicate the current active page.
+        The comments within the code provide additional information about the purpose of the "Contact" link.
+    -->
     <div class="topnav" id="myTopnav">
         <a href="index.html">Home</a>
         <a href="contact.html" class="active">Contact</a>  <!-- this is like the current works page */ -->
@@ -35,44 +52,30 @@ The page structure is as follows:
         <a href="gallery.html">Gallery</a>
         <a href="News.html">News</a> 
         <a href="Pricing.html">Pricing</a>
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-            <i class="fa fa-bars"></i>
-        </a>
     </div>
     <h2 style="text-align: center;">How to Contact Ed Sheeran</h2>
     <div id="info-container">
+        <!--
+            This HTML code represents a contact form section on a webpage.
+            It contains a form with fields for name, email, subject, and message.
+            The form is configured to submit the data to the specified URL using the POST method.
+            Upon submission, the form data will be sent to the "https://formspree.io/f/xbjnnpyp" endpoint.
+            The form includes a "Send" button to initiate the submission.
+        -->
         <div id="contact">
             <div id="contact" class="container">
-                
-            <!--
-                This HTML code represents a contact form that allows users to send messages to the website owner.
-                
-                Usage:
-                - The form is submitted to the URL specified in the 'action' attribute, which is "https://formspree.io/f/xbjnnpyp".
-                - The form uses the 'POST' method to send the data.
-                
-                Form Fields:
-                - 'name': A textarea where the user can enter their name.
-                - 'email': An input field where the user can enter their email address.
-                - 'Subject': A textarea where the user can enter the subject of their message.
-                - 'message': A textarea where the user can enter their message.
-                
-            -->
-            <form
-                    action="https://formspree.io/f/xbjnnpyp"
-                    method="POST"
-                >
-                <h3>   Contact Us</h3>
-                <label for="name">Your name:</label>
-                <textarea id="name" name="name"></textarea>
-                <label for="email">Your email:</label>
-                <input type="email" name="email">
-                <label for="Subject">Subject:</label>
-                <textarea id="Subject" name="Subject"></textarea>
-                <label for="message">Your message:</label>
-                <textarea id="message" name="message"></textarea>
-                <button type="submit">Send</button>
-            </form>
+                <form action="https://formspree.io/f/xbjnnpyp" method="POST">
+                    <h3>Contact Us</h3>
+                    <label for="name">Your name:</label>
+                    <textarea id="name" name="name"></textarea>
+                    <label for="email">Your email:</label>
+                    <input type="email" name="email">
+                    <label for="Subject">Subject:</label>
+                    <textarea id="Subject" name="Subject"></textarea>
+                    <label for="message">Your message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
             </div>
         </div>
         <!--
@@ -103,31 +106,48 @@ The page structure is as follows:
         <div class="footer">
             <div class="social-media">
                 <p>
-                <a href="https://www.facebook.com/EdSheeranMusic/" target="_blank">
-                    <img src="Images/Facebook.png" alt="Facebook">
-                </a>
-                <a href="https://www.tiktok.com/@edsheeran" target="_blank">
-                    <img src="Images/TikTok.jpg" alt="TikTok">
-                </a>
-                <a href="https://www.instagram.com/teddysphotos/" target="_blank">
-                    <img src="Images/instagram logo.png" alt="Instagram">
-                </a>
-                <a href="https://x.com/edsheeran?mx=2" target="_blank">
-                    <img src="Images/X.png" alt="X">
-                </a>
-                <a href="https://music.apple.com/gb/artist/ed-sheeran/183313439" target="_blank">
-                    <img src="Images/apple.png" alt="Apple Music">
-                </a>
-                <a href="https://www.youtube.com/user/EdSheeran" target="_blank">
-                    <img src="Images/youtube.png" alt="YouTube">
-                </a>
-                <a href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V" target="_blank">
-                    <img src="Images/Spotify .png" alt="Spotify">
-                </a>
-                <a href="https://music.amazon.com/tastes" target="_blank">
-                    <img src="Images/amazon.png" alt="Amazon music">
-                </a>
+                    <!-- Facebook icon with link to Ed Sheeran's Facebook page -->
+                    <a href="https://www.facebook.com/EdSheeranMusic/" target="_blank">
+                        <img src="Images/Facebook.png" alt="Facebook">
+                    </a>
+                    
+                    <!-- TikTok icon with link to Ed Sheeran's TikTok page -->
+                    <a href="https://www.tiktok.com/@edsheeran" target="_blank">
+                        <img src="Images/TikTok.jpg" alt="TikTok">
+                    </a>
+                    
+                    <!-- Instagram icon with link to Ed Sheeran's Instagram page -->
+                    <a href="https://www.instagram.com/teddysphotos/" target="_blank">
+                        <img src="Images/instagram logo.png" alt="Instagram">
+                    </a>
+                    
+                    <!-- X icon with link to Ed Sheeran's X page -->
+                    <a href="https://x.com/edsheeran?mx=2" target="_blank">
+                        <img src="Images/X.png" alt="X">
+                    </a>
+                    
+                    <!-- Apple Music icon with link to Ed Sheeran's Apple Music page -->
+                    <a href="https://music.apple.com/gb/artist/ed-sheeran/183313439" target="_blank">
+                        <img src="Images/apple.png" alt="Apple Music">
+                    </a>
+                    
+                    <!-- YouTube icon with link to Ed Sheeran's YouTube channel -->
+                    <a href="https://www.youtube.com/user/EdSheeran" target="_blank">
+                        <img src="Images/youtube.png" alt="YouTube">
+                    </a>
+                    
+                    <!-- Spotify icon with link to Ed Sheeran's Spotify page -->
+                    <a href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V" target="_blank">
+                        <img src="Images/Spotify .png" alt="Spotify">
+                    </a>
+                    
+                    <!-- Amazon Music icon with link to Ed Sheeran's Amazon Music page -->
+                    <a href="https://music.amazon.com/tastes" target="_blank">
+                        <img src="Images/amazon.png" alt="Amazon music">
+                    </a>
                 </p>
+                
+                <!-- Copyright information -->
                 <p>© 2023 Picoto. All Rights Reserved.</p>
             </div>
         </div>

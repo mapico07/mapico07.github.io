@@ -8,14 +8,32 @@
 </head>
     
 <body>
+    <!-- 
+        This code represents the header section of the about.html file.
+        It includes an image container with a background image and a text overlay.
+        The image source is set to "Images/Collage.jpg" and the alt attribute is set to "Background Image".
+        The text overlay is positioned at the bottom left corner of the image and displays the name "Edward Christopher Sheeran".
+    -->
     <header>
         <div class="image-container">
             <img src="Images/Collage.jpg" alt="Background Image" style="width:100%">
             <div class="bottom-left" >Edward Christopher Sheeran</div>
         </div>
-        
     </header>
 
+    <!-- 
+        This code represents a navigation bar with links to different pages.
+        The navigation bar is represented by a div element with the class "topnav" and the id "myTopnav".
+        Each link is represented by an anchor element (<a>) with an href attribute pointing to the respective page.
+        The "Home" link points to "index.html".
+        The "Contact" link points to "contact.html".
+        The "About" link points to "about.html" and has the class "active" to indicate the current page.
+        The "Gallery" link points to "gallery.html".
+        The "News" link points to "News.html" and is commented as the "current works" page.
+        The "Pricing" link points to "Pricing.html".
+        The last anchor element is used as a toggle button for a mobile menu and has an onclick event handler.
+        It contains an icon represented by the <i> element with the class "fa fa-bars".
+    -->
     <div class="topnav" id="myTopnav">
         <a href="index.html" >Home</a>
         <a href="contact.html">Contact</a>
@@ -23,13 +41,16 @@
         <a href="gallery.html">Gallery</a>
         <a href="News.html">News</a>  <!-- this is like the current works page */ -->
         <a href="Pricing.html">Pricing</a>
-        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-            <i class="fa fa-bars"></i>
-        </a>
     </div>
     <h2 style="text-align: center;">Ed's Biography</h2>
+    <!--
+        This section of the HTML file displays information about the musician Ed Sheeran.
+        It includes a brief biography of Ed Sheeran, highlighting his early life, musical journey, and achievements.
+        The section also includes an image of Ed Sheeran.
+    -->
     <div class="flex-container">
         <div class="text">
+            <!-- Biography of Ed Sheeran -->
             <h3> Edward Christopher Sheeran,</h3>
             <p> known professionally as Ed Sheeran, was born on February 17, 1991, in Halifax, West Yorkshire, England.</p> 
             <p>Raised in Framlingham, Suffolk, he began writing songs at the tender age of eleven. </p>
@@ -47,40 +68,64 @@
             <p>His fifth studio album, = (“Equals”), topped charts in most major markets in 2021.</p>
             <p>And recently, his sixth album, - (“Subtract”), was released on May 5, 2023, followed by his seventh album, Autumn Variations, under his own record label, Gingerbread Man Records  
             </p>
-            </div>
+        </div>
         <div class="photo">
-            <img src="Images/Ed_Sheeran.jpg" alt="Ed Sheeranr" style="width: 50%;">
+            <!-- Image of Ed Sheeran -->
+            <img src="Images/Ed_Sheeran.jpg" alt="Ed Sheeran" style="width: 50%;">
         </div>
     </div>
+    </div>
+    <!--
+        This is the footer section of the webpage.
+        It contains social media icons and copyright information.
+    -->
+
     <footer>
         <div class="footer">
             <div class="social-media">
                 <p>
-                <a href="https://www.facebook.com/EdSheeranMusic/" target="_blank">
-                    <img src="Images/Facebook.png" alt="Facebook">
-                </a>
-                <a href="https://www.tiktok.com/@edsheeran" target="_blank">
-                    <img src="Images/TikTok.jpg" alt="TikTok">
-                </a>
-                <a href="https://www.instagram.com/teddysphotos/" target="_blank">
-                    <img src="Images/instagram logo.png" alt="Instagram">
-                </a>
-                <a href="https://x.com/edsheeran?mx=2" target="_blank">
-                    <img src="Images/X.png" alt="X">
-                </a>
-                <a href="https://music.apple.com/gb/artist/ed-sheeran/183313439" target="_blank">
-                    <img src="Images/apple.png" alt="Apple Music">
-                </a>
-                <a href="https://www.youtube.com/user/EdSheeran" target="_blank">
-                    <img src="Images/youtube.png" alt="YouTube">
-                </a>
-                <a href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V" target="_blank">
-                    <img src="Images/Spotify .png" alt="Spotify">
-                </a>
-                <a href="https://music.amazon.com/tastes" target="_blank">
-                    <img src="Images/amazon.png" alt="Amazon music">
-                </a>
+                    <!-- Facebook icon with link to Ed Sheeran's Facebook page -->
+                    <a href="https://www.facebook.com/EdSheeranMusic/" target="_blank">
+                        <img src="Images/Facebook.png" alt="Facebook">
+                    </a>
+                    
+                    <!-- TikTok icon with link to Ed Sheeran's TikTok page -->
+                    <a href="https://www.tiktok.com/@edsheeran" target="_blank">
+                        <img src="Images/TikTok.jpg" alt="TikTok">
+                    </a>
+                    
+                    <!-- Instagram icon with link to Ed Sheeran's Instagram page -->
+                    <a href="https://www.instagram.com/teddysphotos/" target="_blank">
+                        <img src="Images/instagram logo.png" alt="Instagram">
+                    </a>
+                    
+                    <!-- X icon with link to Ed Sheeran's X page -->
+                    <a href="https://x.com/edsheeran?mx=2" target="_blank">
+                        <img src="Images/X.png" alt="X">
+                    </a>
+                    
+                    <!-- Apple Music icon with link to Ed Sheeran's Apple Music page -->
+                    <a href="https://music.apple.com/gb/artist/ed-sheeran/183313439" target="_blank">
+                        <img src="Images/apple.png" alt="Apple Music">
+                    </a>
+                    
+                    <!-- YouTube icon with link to Ed Sheeran's YouTube channel -->
+                    <a href="https://www.youtube.com/user/EdSheeran" target="_blank">
+                        <img src="Images/youtube.png" alt="YouTube">
+                    </a>
+                    
+                    <!-- Spotify icon with link to Ed Sheeran's Spotify page -->
+                    <a href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V" target="_blank">
+                        <img src="Images/Spotify .png" alt="Spotify">
+                    </a>
+                    
+                    <!-- Amazon Music icon with link to Ed Sheeran's Amazon Music page -->
+                    <a href="https://music.amazon.com/tastes" target="_blank">
+                        <img src="Images/amazon.png" alt="Amazon music">
+                    </a>
                 </p>
+                
+                <!-- Copyright information -->
                 <p>© 2023 Picoto. All Rights Reserved.</p>
             </div>
         </div>
